@@ -1,0 +1,244 @@
+/* Global styles */
+
+/* Default font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #344253;
+  }
+  
+  /* Default link styles */
+  a {
+    color: #2e5986;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Container for entire page */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Header styles */
+  
+  /* Flexbox for header content */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    background: #f5f5f5;
+  }
+  
+  /* Logo image */
+  header .logo img {
+    height: 50px;
+  }
+  
+  /* Page title */
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  /* Navigation links */
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-right: 1rem;
+  }
+  
+  nav a {
+    display: block;
+    padding: 0.5rem;
+    color: #050505;
+  }
+  
+  nav a:hover {
+    background-color: #344253;
+    transition: 0.5s all;
+    color: #fff;
+  }
+  
+  /* Main content area styles */
+  
+  /* Padding for main content area */
+  main {
+    padding: 1rem;
+  }
+  
+  /* Hero image section */
+  .hero-image {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Hero text section */
+  .hero-text {
+    max-width: 50%;
+    color: #fff;
+  }
+  
+  .hero-text h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* User selection section */
+  .user-selection {
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .user-selection h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  
+  .button:hover {
+    background-color: #0062cc;
+  }
+  
+  /* Footer styles */
+  
+  /* Padding and background color for footer */
+  footer {
+    padding: 1rem;
+    background-color: #f8f9fa;
+  }
+  
+  /* Text in footer */
+  footer p {
+    text-align: center;
+  }
+  
+  /* Responsive styles */
+  
+  @media screen and (max-width: 767px) {
+  
+    /* Flexbox for header content */
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    /* Adjustments for logo image */
+    header .logo img {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  
+    /* Page title font size */
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    /* Flexbox for navigation links */
+    nav ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        }
+        
+        /* Adjustments for navigation links */
+        nav ul li {
+        margin: 0;
+        }
+        
+        nav a {
+        padding: 0.25rem;
+        }
+        
+        /* Hero text section */
+        .hero-text {
+        max-width: 100%;
+        }
+        
+        .hero-text h2 {
+        font-size: 2rem;
+        }
+        
+        .hero-text p {
+        font-size: 1.25rem;
+        }
+        
+        /* User selection section */
+        .user-selection {
+        max-width: 100%;
+        }
+        
+        .user-selection h3 {
+        font-size: 1.5rem;
+        }
+        
+        .button {
+        font-size: 1.25rem;
+        padding: 0.75rem 1.5rem;
+        }
+        
+        }
+        
+        @media screen and (max-width: 575px) {
+        
+        /* Hero image height */
+        .hero-image {
+        height: 300px;
+        }
+        
+        /* Hero text section */
+        .hero-text h2 {
+        font-size: 2rem;
+        }
+        
+        .hero-text p {
+        font-size: 1.25rem;
+        }
+        
+        /* User selection section */
+        .user-selection h3 {
+        font-size: 1.25rem;
+        }
+        
+        .button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        }
+        
+        }

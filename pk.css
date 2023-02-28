@@ -1,0 +1,74 @@
+/* Styles for the wrapper container */
+.wrapper {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+    margin-top: 150px;
+    max-width: 600px;
+  }
+  
+  /* Styles for the form header */
+  .wrapper h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Styles for the form labels */
+  .wrapper label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Styles for the form input fields */
+  .wrapper input[type="email"],
+  .wrapper input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for the error messages */
+  .wrapper .invalid-feedback {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for the submit button */
+  .wrapper input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .wrapper input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Styles for the sign up link */
+  .wrapper a {
+    color: #337ab7;
+  }
+  
+  .wrapper a:hover {
+    color: #23527c;
+  }
+  

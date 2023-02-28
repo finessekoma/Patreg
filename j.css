@@ -1,0 +1,102 @@
+/* Style for the page body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style for the page header */
+  h1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  /* Style for the section headers */
+  h2 {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  /* Style for the tables */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Style for the buttons */
+  button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  /* Style for the form labels */
+  label {
+    display: block;
+    margin-top: 16px;
+  }
+  
+  /* Style for the form input fields */
+  input[type=text], input[type=number] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 16px;
+    cursor: pointer;
+  }
+  
+  /* Style for the item quantity display */
+  td[id$="-quantity"] {
+    font-weight: bold;
+  }
+  
+  /* Style for the item price display */
+  td[id$="-price"] {
+    font-style: italic;
+  }
+  
+  /* Style for the profit earned display */
+  #profit-earned {
+    font-weight: bold;
+  }
+  
+  /* Style for the total items remaining display */
+  #total-items-remaining {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  

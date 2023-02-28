@@ -1,0 +1,258 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styles */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f5f5f5;
+  }
+  
+  header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 0.8rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #5e5e5e;
+  }
+  
+  main {
+    padding: 6rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  form label {
+    display: flex;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  form label input[type="checkbox"] {
+    margin-right:10px;
+  }
+  
+  form label a {
+    text-align: left;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"],
+  form input[type="checkbox"] {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: none;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f5f5f5;
+  }
+  
+  form input[type="text"]:focus,
+  form input[type="email"]:focus,
+  form input[type="password"]:focus,
+  form input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  form input[type="checkbox"] {
+    margin-top: 1rem;
+  }
+  
+  form a {
+    display: block;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    color: #333;
+    text-decoration: none;
+    text-align: right;
+  }
+  
+  form button[type="submit"] {
+    display: block;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #333;
+    transition: all 0.3s ease;
+  }
+  /* Style the Submit button on the form */
+.form button[type="submit"] {
+    display: block;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  /* Add a hover effect to the Submit button */
+  .form button[type="submit"]:hover {
+    background-color: #555;
+    cursor: pointer;
+  }
+  
+  /* Style the links for the form (i.e. Forgot Password) */
+  .form a {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #333;
+    text-align: right;
+    text-decoration: none;
+  }
+  
+  .form a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style the checkbox for the form */
+  .form input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 0.5rem;
+    transform: scale(1.5);
+  }
+  
+  /* Style the label for the checkbox */
+  .form label[for="remember-me"] {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #333;
+    margin-left: 0.5rem;
+  }
+  
+  /* Style the forgot password form */
+  #forgot-password {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 2rem;
+  }
+  
+  #forgot-password h2 {
+    margin-top: 0;
+  }
+  
+  #forgot-password form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #forgot-password label {
+    margin-top: 1rem;
+  }
+  
+  #forgot-password input[type="email"] {
+    margin-bottom: 1rem;
+  }
+  
+  #forgot-password button[type="submit"] {
+    margin-top: 2rem;
+  }
+  /* Hide the login section by default */
+#login {
+    display: none;
+  }
+  
+  /* Show the signup section when the URL contains #signup */
+  #signup:target {
+    display: block;
+    animation: fade-in 0.5s ease;
+  }
+  
+  /* Show the login section when the URL contains #login */
+  #login:target {
+    display: block;
+    animation: fade-in 0.5s ease;
+  }
+  
+  /* Add a transition effect when switching between sections */
+  main section {
+    transition: all 0.5s ease;
+  }
+  
+  /* Fade in animation */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+ 

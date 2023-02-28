@@ -1,0 +1,531 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+
+/* Header styles */
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the header container */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the logo */
+header h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style the navigation links */
+header nav ul {
+  display: flex;
+  list-style: none;
+  text-decoration: underline;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li:last-child {
+  margin-right: 0;
+}
+
+header nav ul li a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f44336;
+}
+
+/* Style the profile section */
+header .profile-section a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+header .profile-section ul {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  list-style: none;
+  display: none;
+}
+
+header .profile-section ul li {
+  margin-bottom: 10px;
+}
+
+header .profile-section ul li a {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+
+header .profile-section ul li a:hover {
+  color: #f44336;
+}
+
+header .profile-section:hover ul {
+  display: block;
+}
+
+/* Style the cart button */
+header .cart-button {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  background-color: #f5f5f5;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+header .cart-button:hover {
+  background-color: #f44336;
+  color: #fff;
+}
+.profile-section {
+  display: none; /* Hide the profile section by default */
+}
+
+.logged-in .profile-section {
+  display: block; /* Show the profile section when the user is logged in */
+}
+
+.hidden {
+  display: none;
+}
+.profile-section {
+  display: none;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+.profile-section img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.profile-section p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.profile-section ul {
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+.profile-section li {
+  margin: 5px 0;
+}
+.profile-section li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+.profile-section li a:hover {
+  color: #777;
+}
+.profile-section {
+  display: block;
+}
+
+
+
+/* Banner styles */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: url('img/uniform.jpg') no-repeat center center/cover;
+}
+
+.banner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.8) 100%);
+  z-index: 1;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+}
+
+.banner-content h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.banner-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  background-color: #5cb85c;
+  color: #333;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #9fee71;
+  color: #fff;
+}
+
+
+/* Products styles */
+.products-section {
+  margin-top: 50px;
+}
+
+.products-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.product {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+}
+
+.product h3 {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.product p.price {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.add-to-cart {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #ccc;
+}
+
+/* Reviews styles */
+.reviews-section {
+  margin-top: 50px;
+}
+
+.reviews-section h2 {
+font-size: 2rem;
+margin-bottom: 20px;
+}
+
+.review {
+border: 1px solid #ccc;
+padding: 10px;
+margin-bottom: 10px;
+}
+
+.review h4 {
+font-size: 1.2rem;
+margin-bottom: 5px;
+}
+
+.review p {
+font-size: 1rem;
+margin-bottom: 0;
+}
+
+.review:last-of-type {
+margin-bottom: 20px;
+}
+
+.contact-section {
+margin-top: 50px;
+}
+
+.contact-section h2 {
+font-size: 2rem;
+margin-bottom: 20px;
+}
+
+.contact-section form {
+display: flex;
+flex-direction: column;
+max-width: 600px;
+}
+
+.contact-section label {
+font-size: 1.2rem;
+margin-bottom: 10px;
+}
+
+.contact-section input,
+.contact-section textarea {
+font-size: 1rem;
+padding: 10px;
+margin-bottom: 20px;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+
+.contact-section textarea {
+height: 150px;
+}
+
+.contact-section input[type="submit"] {
+max-width: 150px;
+align-self: flex-start;
+background-color: #222;
+color: #fff;
+border: none;
+cursor: pointer;
+transition: all 0.2s ease;
+}
+
+.contact-section input[type="submit"]:hover {
+background-color: #fff;
+color: #222;
+border: 1px solid #222;
+}
+
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+background-color: #fff;
+margin: 10% auto;
+padding: 20px;
+border: 1px solid #222;
+max-width: 500px;
+text-align: center;
+}
+
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  }
+  
+  /* Modal Header */
+  .modal-header {
+  padding: 10px 20px;
+  background-color: #5cb85c;
+  color: white;
+  }
+  
+  /* Modal Body */
+  .modal-body {
+  padding: 10px 20px;
+  text-align: center;
+  }
+  
+  /* Modal Footer */
+  .modal-footer {
+  padding: 10px 20px;
+  background-color: #5cb85c;
+  color: white;
+  }
+  
+  /* Close Button */
+  .close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  }
+  .modal-header {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    }
+    
+    .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem 1.5rem;
+    }
+    
+    .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 1px solid #dee2e6;
+    }
+    
+    .modal-footer > * + * {
+    margin-left: 1rem;
+    }
+    
+    @media (min-width: 576px) {
+    .modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+    }
+    
+    .modal-content {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    }
+    
+    .modal-sm {
+    max-width: 300px;
+    }
+    }
+    
+    @media (min-width: 992px) {
+    .modal-lg,
+    .modal-xl {
+    max-width: 800px;
+    }
+    }
+    
+    @media (min-width: 1200px) {
+    .modal-xl {
+    max-width: 1140px;
+    }
+    }
+    /* Style for the form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+

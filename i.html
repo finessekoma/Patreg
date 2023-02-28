@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product Selection</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Product Selection</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h2>Select a Product</h2>
+		<form>
+			<label for="products">Choose a product:</label>
+			<select id="products" name="products">
+				<option value="t-shirts">T-Shirts</option>
+				<option value="sweatshirts">Sweatshirts</option>
+				<option value="jackets">Jackets</option>
+			</select>
+			<label for="size">Size:</label>
+			<select id="size" name="size">
+				<option value="s">Small</option>
+				<option value="m">Medium</option>
+				<option value="l">Large</option>
+			</select>
+			<label for="color">Color:</label>
+			<select id="color" name="color">
+				<option value="red">Red</option>
+				<option value="blue">Blue</option>
+				<option value="green">Green</option>
+			</select>
+			<label for="quantity">Quantity:</label>
+			<input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+			<p>Total Price: <span id="totalPrice">$29.99</span></p>
+			<button type="submit">Add to Cart</button>
+		</form>
+	</main>
+	<footer>
+		<p>&copy; 2023 Product Selection. All rights reserved.</p>
+		<div class="social-icons">
+			<a href="#"><i class="fab fa-facebook"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-linkedin"></i></a>
+		</div>
+	</footer>
+	<script>
+		// JavaScript code to calculate the total price
+		const price = 29.99; // The price of the product
+		const quantityInput = document.getElementById('quantity');
+		const totalPriceSpan = document.getElementById('totalPrice');
+
+		quantityInput.addEventListener('input', () => {
+			const quantity = quantityInput.value;
+			const totalPrice = price * quantity;
+			totalPriceSpan.innerHTML = '$' + totalPrice.toFixed(2);
+		});
+	</script>
+</body>
+</html>
